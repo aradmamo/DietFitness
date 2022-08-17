@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body>
+    <h1 class="title">
+      <u><strong> MentorFit </strong></u>
+    </h1>
+    <div class="w-100 container-top">
+      <h3 class="title1">היום</h3>
+      <h3 class="title1">אתמול</h3>
+    </div>
+    <div class="progress blue">
+      <span class="progress-left">
+        <span class="progress-bar"></span>
+      </span>
+      <span class="progress-right">
+        <span class="progress-bar"></span>
+      </span>
+      <div class="progress-value">90%</div>
+    </div>
+    <br />
+    <br /><br /><br /><br /><br /><br />
+    <h5>סיכום תזונה</h5>
+    <div class="container-calories">
+      <div class="part1">
+        <div class="cont-icon">
+          <img
+            src="./assets/images/icons8-rice-16.png"
+            alt="rice"
+            class="foodimg-first"
+          />
+          <img
+            src="./assets/images/icons8-pie-16 (1).png"
+            alt="pie"
+            class="foodimg-sec"
+          />
+          <img
+            src="./assets/images/icons8-bread-16.png"
+            alt="bread"
+            class="foodimg-third"
+          />
+          <img
+            src="./assets/images/icons8-green-salad-16.png"
+            alt="salad"
+            class="foodimg-last"
+          />
+        </div>
+        <h5 class="fs-2 text-center">פחמימות</h5>
+        <p class="fs-6 text-center text-success">0/5.5 מנות</p>
+      </div>
+      <div class="part1 border border-light">
+        <div class="cont-icon">
+          <img
+            src="./assets/images/icons8-cheese-wedge-16.png"
+            alt="cheese"
+            class="foodimg-first"
+          />
+          <img
+            src="./assets/images/icons8-chicken-16.png"
+            alt="chicken"
+            class="foodimg-sec"
+          />
+          <img
+            src="./assets/images/icons8-egg-16.png"
+            alt="egg"
+            class="foodimg-third"
+          />
+          <img
+            src="./assets/images/icons8-meat-16.png"
+            alt="meat"
+            class="foodimg-last"
+          />
+        </div>
+        <h5 class="fs-2 text-center">חלבונים</h5>
+        <p class="fs-6 text-center text-success">0/3.5 מנות</p>
+      </div>
+
+      <div class="part1">
+        <div class="cont-icon">
+          <img
+            src="./assets/images/icons8-avocado-16.png"
+            class="foodimg-first"
+            alt="avocado"
+          />
+          <img
+            src="./assets/images/icons8-lemon-cake-16.png"
+            class="foodimg-third"
+            alt="cake"
+          />
+          <img
+            src="./assets/images/icons8-pistachio-16.png"
+            class="foodimg-sec"
+            alt="pist"
+          />
+          <img
+            src="./assets/images/icons8-olive-oil-16.png"
+            class="foodimg-last"
+            alt="oil"
+          />
+        </div>
+        <h5 class="fs-2 text-center">שומנים</h5>
+        <p class="fs-6 text-center text-success">0/1 מנות</p>
+      </div>
+    </div>
+    <h5>מקורות לויטמינים ומינרלים</h5>
+
+    <div class="container-fruits-vegtables">
+      <div class="img-fruits">
+        <img
+          src="./assets/images/icons8-apple-16.png"
+          class="first-img"
+          alt="apple"
+        />
+        <img
+          src="./assets/images/icons8-kiwi-fruit-16.png"
+          class="sec-img"
+          alt="kiwi"
+        />
+        <img
+          src="./assets/images/icons8-watermelon-16.png"
+          class="last-img"
+          alt="melon"
+        />
+      </div>
+      <div class="allfruits">
+        <h5 id="title-fruits">פירות</h5>
+        <div class="fruits">
+          <input
+            type="button"
+            value="+"
+            class="btn-1"
+            id="btn-fruits+"
+            onclick="plus()"
+          />
+          <p class="mx-3 para-1 text-light ansfrveg">0/4</p>
+          <input type="button" value="-" class="btn-1" id="btn-fruits-" />
+        </div>
+      </div>
+
+      <div class="allveg">
+        <h5 id="title-vegtables">ירקות</h5>
+        <div class="vegtables">
+          <input type="button" value="+" class="btn-1" />
+          <p class="mx-3 para-2">0/1</p>
+          <input type="button" value="-" class="btn-1" />
+        </div>
+      </div>
+      <div class="img-fruits">
+        <img
+          src="./assets/images/icons8-carrot-16.png"
+          alt="carrot"
+          class="first-img"
+        />
+        <img
+          src="./assets/images/icons8-lettuce-16.png"
+          alt="hassa"
+          class="sec-img"
+        />
+        <img
+          src="./assets/images/icons8-onion-16.png"
+          alt="bazal"
+          class="last-img"
+        />
+      </div>
+    </div>
+    <h5>מותרות</h5>
+    <div id="container-coal">
+      <div class="w-50 text-center sweets">
+        <h5 class="text-light">חטאים ומתוקים</h5>
+        <input type="button" value="+" class="btn-1" />
+        <div>
+          <img
+            src="./assets/images/icons8-sweet-16.png"
+            alt="sweets"
+            class="img-sweets"
+          />
+          <img
+            src="./assets/images/icons8-sweet-16 (1).png"
+            alt="sweets"
+            class="img-sweets"
+          />
+        </div>
+      </div>
+      <div class="w-50 text-center">
+        <h5 class="text-light">אלכוהול</h5>
+        <input type="button" value="+" class="btn-1" />
+        <div>
+          <img
+            src="./assets/images/icons8-vodka-16 (1).png"
+            alt="vodka"
+            class="vodka-img"
+          />
+          <img
+            src="./assets/images/icons8-vodka-16.png"
+            alt="vodka"
+            class="vodka-img"
+          />
+        </div>
+      </div>
+    </div>
+    <h5>קיזוז צ'יט שבועי</h5>
+    <div class="container-calories">
+      <div class="divnum1">
+        <h5>מנת חלבון</h5>
+        <input type="button" value="-" class="btn-1" />
+      </div>
+      <div class="divnum2">
+        <h5>מנת פחמימה</h5>
+        <input type="button" value="-" class="btn-1" />
+      </div>
+      <div class="divnum3">
+        <h5>מנת שומן</h5>
+        <input type="button" value="-" class="btn-1" />
+      </div>
+    </div>
+    <h5>מים</h5>
+    <div class="container-cups">
+      <h5 class="text-center">כמה שתיתי היום ?</h5>
+      <div class="fitnes-app">
+        <input type="button" value="+" class="btn-1" />
+        <p class="numofcups text-light">0 כוסות מים</p>
+
+        <input type="button" value="-" class="btn-1" />
+      </div>
+      <div class="d-flex w-100">
+        <img
+          class="img-glass"
+          src="./assets/images/icons8-glass-16.png"
+          alt=""
+        />
+        <img
+          class="img-glass"
+          src="./assets/images/icons8-glass-16.png"
+          alt=""
+        />
+        <img
+          class="img-glass"
+          src="./assets/images/icons8-glass-16.png"
+          alt=""
+        />
+        <img
+          src="./assets/images/icons8-glass-16.png"
+          class="img-glass"
+          alt=""
+        />
+        <img
+          class="img-glass"
+          src="./assets/images/icons8-glass-16.png"
+          alt=""
+        />
+        <img
+          class="img-glass"
+          src="./assets/images/icons8-glass-16.png"
+          alt=""
+        />
+        <img
+          class="img-glass"
+          src="./assets/images/icons8-glass-16.png"
+          alt=""
+        />
+        <img
+          class="img-glass"
+          src="./assets/images/icons8-glass-16.png"
+          alt=""
+        />
+        <img
+          class="img-glass"
+          src="./assets/images/icons8-glass-16.png"
+          alt=""
+        />
+        <img
+          class="img-glass"
+          src="./assets/images/icons8-glass-16.png"
+          alt=""
+        />
+        <img
+          class="img-glass"
+          src="./assets/images/icons8-glass-16.png"
+          alt=""
+        />
+        <img
+          class="img-glass"
+          src="./assets/images/icons8-glass-16.png"
+          alt=""
+        />
+        <img
+          class="img-glass"
+          src="./assets/images/icons8-glass-16.png"
+          alt=""
+        />
+        <img
+          class="img-glass"
+          src="./assets/images/icons8-glass-16.png"
+          alt=""
+        />
+        <img
+          class="img-glass"
+          src="./assets/images/icons8-glass-16.png"
+          alt=""
+        />
+        <img
+          class="img-glass"
+          src="./assets/images/icons8-glass-16.png"
+          alt=""
+        />
+        <img
+          class="img-glass"
+          src="./assets/images/icons8-glass-16.png"
+          alt=""
+        />
+        <img
+          class="img-glass"
+          src="./assets/images/icons8-glass-16.png"
+          alt=""
+        />
+        <img
+          class="img-glass"
+          src="./assets/images/icons8-glass-16.png"
+          alt=""
+        />
+      </div>
+    </div>
+    <h5>ספורט</h5>
+    <div class="container-cups">
+      <h5 class="text-center">כמה אירובי עשיתי?</h5>
+      <div class="fitnes-app">
+        <input type="button" value="+" class="btn-1" />
+        <p class="numofcups text-light">0 דקות</p>
+        <input type="button" value="-" class="btn-1" />
+      </div>
+      <div>
+        <input type="radio" name="radio" id="inp-radio" />
+        <label for="radio" class="labelforinp">ביצעתי אימון כוח היום</label>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/javascript/app.js"></script>
+  </body>
+</html>
